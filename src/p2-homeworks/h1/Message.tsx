@@ -66,7 +66,8 @@ const MessageStyle=styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
+  margin: 10px;
 `
 const TextStyle=styled.div`
   background-color: green;

@@ -1,5 +1,9 @@
 .default {
+background-color: #61dafb;
+}
 
+.default:disabled{
+    background-color: gold;
 }
 
 .red {

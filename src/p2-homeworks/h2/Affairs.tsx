@@ -2,6 +2,7 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
+import s from './Affairs.module.css'
 
 type AffairsPropsType = { // fix
     data: Array<AffairType>
@@ -33,10 +34,10 @@ function Affairs(props: AffairsPropsType) {
             {/*<button onClick={setMiddle}>Middle</button>*/}
             {/*<button onClick={setLow}>Low</button>*/}
 
-            <SuperButton onClick={setAll}>All</SuperButton>
-            <SuperButton onClick={setHigh}>High</SuperButton>
-            <SuperButton onClick={setMiddle}>Middle</SuperButton>
-            <SuperButton onClick={setLow}>Low</SuperButton>
+            <SuperButton className={s.superButton} onClick={setAll}>All</SuperButton>
+            <SuperButton className={s.superButton} onClick={setHigh}>High</SuperButton>
+            <SuperButton className={s.superButton} onClick={setMiddle}>Middle</SuperButton>
+            <SuperButton className={s.superButton} onClick={setLow}>Low</SuperButton>
         </div>
     )
 }

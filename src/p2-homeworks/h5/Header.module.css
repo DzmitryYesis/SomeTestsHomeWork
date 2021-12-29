@@ -1,0 +1,14 @@
+.nav {
+    background-color: green;
+    padding: 20px;
+}
+
+.itemN {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.itemA {
+    color: black;
+}

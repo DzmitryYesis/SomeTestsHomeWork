@@ -6,11 +6,13 @@ import {restoreState, saveState} from './localStorage/localStorage'
 function HW6() {
     const [value, setValue] = useState<string>('')
 
+
     const save = () => {
         saveState<string>('editable-span-value', value)
     }
     const restore = () => {
-        // setValue()
+        let newValue=restoreState('editable-span-value','')
+        setValue(newValue)
     }
 
     return (
@@ -20,11 +22,11 @@ function HW6() {
 
             {/*should work (должно работать)*/}
             <div>
-                <SuperEditableSpan
-                    value={value}
-                    onChangeText={setValue}
-                    spanProps={{children: value ? undefined : 'enter text...'}}
-                />
+                    <SuperEditableSpan
+                        value={value}
+                        onChangeText={setValue}
+                        spanProps={{children: value ? undefined : ' enter text...'}}
+                    />
             </div>
             <SuperButton onClick={save}>save</SuperButton>
             <SuperButton onClick={restore}>restore</SuperButton>

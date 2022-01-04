@@ -1,0 +1,7 @@
+.row{
+    display: flex;
+    max-width: 195px;
+    justify-content: space-between;
+    color: black;
+    margin: 5px;
+}

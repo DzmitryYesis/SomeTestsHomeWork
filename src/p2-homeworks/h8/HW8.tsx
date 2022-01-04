@@ -3,10 +3,10 @@ import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from './HW8.module.css'
 
-export type UserType ={
-    _id:number
-    name:string
-    age:number
+export type UserType = {
+    _id: number
+    name: string
+    age: number
 }
 
 const initialPeople = [
